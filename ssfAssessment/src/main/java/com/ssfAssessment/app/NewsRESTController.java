@@ -18,7 +18,7 @@ public class NewsRESTController {
     Articles service;
 
     @PostMapping
-    public ResponseEntity<Articles> createBoardGame(@RequestBody Articles asv) {
+    public ResponseEntity<Articles> createArticlesSave(@RequestBody Articles asv) {
         int x = service.save(asv);
         if (x > 0)
             asv.setInsertCount(x);
@@ -26,13 +26,13 @@ public class NewsRESTController {
     }
 
     @GetMapping(path = "/news/{aId}")
-    public ResponseEntity<Articles> getGameBoardById(@PathVariable String aId) {
+    public ResponseEntity<Articles> getArticlesById(@PathVariable String aId) {
         Articles a = service.findById(aId);
         return ResponseEntity.ok(a);
     }
 
     @PutMapping(path = "/news/{aId}")
-    public ResponseEntity<Articles> updateGameBoard(@RequestBody Articles asv) {
+    public ResponseEntity<Articles> updateArticles(@RequestBody Articles asv) {
         int aResult = service.update(asv);
         if (aResult > 0)
             asv.setUpdateCount(aResult);

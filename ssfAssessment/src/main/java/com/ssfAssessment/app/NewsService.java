@@ -49,7 +49,7 @@ public class NewsService implements ArticlesRepo{
         }
         return Optional.empty();
     }
-
+ 
     @Autowired
     @Qualifier("feeds")
     RedisTemplate<String, Articles> redisTemplate;
