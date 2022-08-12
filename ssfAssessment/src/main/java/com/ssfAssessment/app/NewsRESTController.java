@@ -1,4 +1,4 @@
-package com.ssfAssessment;
+package com.ssfAssessment.app;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

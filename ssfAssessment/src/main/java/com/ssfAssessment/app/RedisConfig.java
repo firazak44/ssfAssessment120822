@@ -1,4 +1,4 @@
-package com.ssfAssessment;
+package com.ssfAssessment.app;
 
 import java.util.Optional;
 

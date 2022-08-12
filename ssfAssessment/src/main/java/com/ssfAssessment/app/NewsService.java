@@ -1,4 +1,4 @@
-package com.ssfAssessment;
+package com.ssfAssessment.app;
 
 import java.util.Optional;
 import java.util.Set;
@@ -69,7 +69,7 @@ public class NewsService implements ArticlesRepo{
     }
 
     @Override
-    public int update(Articles atc) {
+    public int updatessfAssessment(Articles atc) {
         Articles result = (Articles) redisTemplate.opsForValue().get(atc.getId());
         if (result != null)
             return 1;
@@ -80,5 +80,6 @@ public class NewsService implements ArticlesRepo{
         String pattern = "*%s*".formatted(index);
         return redisTemplate.keys(pattern);
     }
+
 }
 
