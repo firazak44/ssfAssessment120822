@@ -7,30 +7,20 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-// import org.springframework.web.bind.annotation.RequestMapping;
-// import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-// @RequestMapping(path="/news")
 public class NewsController {
 
     Articles service;
-    
+
     @Autowired
     private NewsService newSvc;
 
     @GetMapping(path="/news")
     public String showArticles(Model model){
         Articles a = new Articles();
-        // a.setId(id);
-        // a.setTitle(title);
-        // a.setUrl(url);
-        // a.setImageurl(imageurl);
-        // a.setBody(body);
-        // a.setTags(tags);
-        // a.setCategories(categories);
         Optional<Articles> opta = newSvc.getArticles(a);
         if(opta.isEmpty()){
             model.addAttribute("articles", new Articles());
