@@ -98,12 +98,13 @@ public class Articles implements Serializable{
     }
 
 
-    //from NewsRESTController
+    //from NewsController
     public int save(Articles asv) {
         return 0;
     }
     public void setInsertCount(int x) {
     }
+    //from NewsRESTController
     public Articles findById(String aId) {
         return null;
     }

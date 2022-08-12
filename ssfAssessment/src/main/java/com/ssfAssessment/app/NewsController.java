@@ -37,7 +37,7 @@ public class NewsController {
         return "text";
     }
     
-    @PostMapping
+    @PostMapping(path="/articles")
     public ResponseEntity<Articles> createArticlesSave(@RequestBody Articles asv) {
         int x = service.save(asv);
         if (x > 0)
