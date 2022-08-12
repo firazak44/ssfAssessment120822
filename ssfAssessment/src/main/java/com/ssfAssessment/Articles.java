@@ -99,7 +99,7 @@ public class Articles implements Serializable{
 
 
     //from NewsRESTController
-    public int save(Articles ms) {
+    public int save(Articles asv) {
         return 0;
     }
     public void setInsertCount(int x) {

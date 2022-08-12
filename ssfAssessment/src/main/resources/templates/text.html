@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" 
+    integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Crypto News</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Crypto News</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col">
+            <form method="GET" action="news">
+                <div class="col">
+                    <img th:src="${imageurl}" width=200 height=200/>
+                    <p>
+                        ID:
+                        <p data-th-text="${id}"></p>
+                    </p>
+                    <p data-th-text="${title}"></p>
+                    <p data-th-text="${body}"></p>
+                    <p>
+                        Catergories:
+                        <h3 data-th-text="${categories}"></h3>
+                        <h3 data-th-text="${tags}"></h3><br>
+                        Link:
+                        <h3 data-th-text="${url}">Link</h3>
+                    </p>
+                </div>
+                <button type="submit"
+                class="btn btn-warning btn-lg">Save</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
