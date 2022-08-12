@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(path = "/news", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 public class NewsRESTController {
-    @Autowired
+    
     Articles service;
 
     @PostMapping
@@ -25,13 +25,13 @@ public class NewsRESTController {
         return ResponseEntity.ok(asv);
     }
 
-    @GetMapping(path = "/{aId}")
+    @GetMapping(path = "/news/{aId}")
     public ResponseEntity<Articles> getGameBoardById(@PathVariable String aId) {
         Articles a = service.findById(aId);
         return ResponseEntity.ok(a);
     }
 
-    @PutMapping(path = "/{aId}")
+    @PutMapping(path = "/news/{aId}")
     public ResponseEntity<Articles> updateGameBoard(@RequestBody Articles asv) {
         int aResult = service.update(asv);
         if (aResult > 0)
