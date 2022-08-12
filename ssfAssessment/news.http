@@ -1,25 +1,22 @@
 POST http://localhost:8082/news HTTP/1.1
 content-type: application/json
 
-Type: 100
-Message: "News list successfully returned"
-Promoted: Array [0]
 Data: Array [50]
 0: Object
-id: "27933779"
-guid: "https://www.cryptoglobe.com/latest/2022/08/crypto-market-recovery-sees-btc-trading-into-busd-explode-report/"
-published_on: 1660270800
-imageurl: "https://images.cryptocompare.com/news/cryptoglobe/80000000000.jpeg"
-title: "Crypto Market Recovery Sees $BTC Trading Into $BUSD Explode: Report"
-url: "https://www.cryptoglobe.com/latest/2022/08/crypto-market-recovery-sees-btc-trading-into-busd-explode-report/"
-source: "cryptoglobe"
-body: "The cryptocurrency market’s recovery in July, which has seen the price of Bitcoin ($BTC) rise 18.4% and of Ethereum ($ETH) rise 64.7% respectively, has seen trading volume for the flagship cryptocurrency against BinanceUSD ($BUSD) explode upwards. According to CryptoCompare’s July 2022 Exchange Review, the average daily volume of the BTC/BUSD pair rose 62.1% to 1.49 […]"
-tags: "Altcoins|Bitcoin|Stablecoins"
-categories: "BTC|Trading|ETH|Altcoin|Exchange"
+id: "27933785"
+guid: "https://bitcoinmagazine.com/culture/bitcoin-will-lead-us-to-a-more-virtuous-world"
+published_on: 1660273200
+imageurl: "https://images.cryptocompare.com/news/default/bitcoinmagazine.png"
+title: "Bitcoin Will Lead Us To A More Virtuous World"
+url: "https://bitcoinmagazine.com/culture/bitcoin-will-lead-us-to-a-more-virtuous-world"
+source: "bitcoinmagazine"
+body: "Rare is the successful revolution whose new regime is kinder, gentler and more just than the one it replaces. We must strive to protect the spirit of Bitcoin."
+tags: "religion|Christianity|Culture|Opinion|Hyperbitcoinization"
+categories: "BTC"
 upvotes: "0"
 downvotes: "0"
 lang: "EN"
 source_info: Object
-name: "CryptoGlobe"
+name: "Bitcoin Magazine"
 lang: "EN"
-img: "https://images.cryptocompare.com/news/default/cryptoglobe.png"
+img: "https://images.cryptocompare.com/news/default/bitcoinmagazine.png"
