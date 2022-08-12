@@ -17,13 +17,13 @@ public class NewsRESTController {
     
     Articles service;
 
-    @PostMapping
-    public ResponseEntity<Articles> createArticlesSave(@RequestBody Articles asv) {
-        int x = service.save(asv);
-        if (x > 0)
-            asv.setInsertCount(x);
-        return ResponseEntity.ok(asv);
-    }
+    // @PostMapping
+    // public ResponseEntity<Articles> createArticlesSave(@RequestBody Articles asv) {
+    //     int x = service.save(asv);
+    //     if (x > 0)
+    //         asv.setInsertCount(x);
+    //     return ResponseEntity.ok(asv);
+    // }
 
     @GetMapping(path = "/news/{aId}")
     public ResponseEntity<Articles> getArticlesById(@PathVariable String aId) {
