@@ -3,6 +3,7 @@ package com.ssfAssessment;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.security.Timestamp;
 import java.util.Random;
 
@@ -10,7 +11,7 @@ import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import jakarta.json.JsonReader;
 
-public class Articles {
+public class Articles implements Serializable{
     private String title;
     private String categories;
     private String body;
@@ -96,4 +97,21 @@ public class Articles {
         return a;
     }
 
+
+    //from NewsRESTController
+    public int save(Articles ms) {
+        return 0;
+    }
+    public void setInsertCount(int x) {
+    }
+    public Articles findById(String aId) {
+        return null;
+    }
+    public int update(Articles asv) {
+        return 0;
+    }
+    public void setUpdateCount(int aResult) {
+    }
+
+    
 }
